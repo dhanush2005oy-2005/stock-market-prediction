@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How It Works</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 40px 20px;
+    background: linear-gradient(270deg, #1a2a6c, #b21f1f, #fdbb2d, #0f2027);
+    background-size: 800% 800%;
+    animation: gradientShift 30s ease infinite;
+    color: #fff;
+    min-height: 100vh;
+}
+@keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.container {
+    max-width: 700px;
+    margin: auto;
+    background: rgba(30,42,56,0.95);
+    padding: 30px 25px;
+    border-radius: 20px;
+    box-shadow: 0 15px 50px rgba(0,0,0,0.6);
+    text-align: center;
+}
+
+h2 {
+    color: #FFD700;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+ul {
+    text-align: left;
+    list-style: disc inside;
+    line-height: 1.8;
+    font-size: 15px;
+    padding-left: 0;
+}
+
+ul li {
+    margin-bottom: 12px;
+}
+
+a.how-it-works-btn {
+    display: inline-block;
+    background-color: #2196F3;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+a.how-it-works-btn:hover {
+    background-color: #1976D2;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+    .container { padding: 20px 15px; }
+    ul { font-size: 14px; }
+}
+</style>
+</head>
+<body>
+<div class="container">
+    <h2>How It Works</h2>
+    <p>Follow these steps to understand how the stock prediction system works:</p>
+    <ul>
+        <li>The system collects past stock prices from Yahoo Finance.</li>
+        <li>It analyzes how the stock price has changed over time.</li>
+        <li>An AI model studies past trends and patterns.</li>
+        <li>The model predicts future stock prices based on what it learned.</li>
+        <li>The system shows the predicted prices along with graphs.</li>
+    </ul>
+    <div style="margin-top: 25px;">
+        <a href="{{ url_for('index') }}" class="how-it-works-btn">Back to Login</a>
+    </div>
+</div>
+</body>
+</html>

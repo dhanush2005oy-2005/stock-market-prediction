@@ -1,4 +1,4 @@
-LSTM-Based Prediction Project
+Stock Market Prediction using Neutral Networks
 
 Overview
 

@@ -50,5 +50,3 @@ Author
 
 Dhanush P G
 
-- GitHub: https://github.com/dhanush
-- LinkedIn: Add your LinkedIn profile link here.
